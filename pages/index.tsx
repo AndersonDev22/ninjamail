@@ -1,22 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
-
-import RocketseatLogo from '../assets/rocketseat.svg'
-
-import { Container } from '../styles/pages/Home'
+import MainLayout from '../src/components/Main'
 
 const Home: React.FC = () => {
   return (
-    <Container>
+    <>
       <Head>
-        <title>Homepage</title>
+        <title>Home</title>
       </Head>
-
-      <RocketseatLogo />
-      <h1>ReactJS Structure</h1>
-      <p>A ReactJS + Next.js structure made by Rocketseat.</p>
-    </Container>
+      <MainLayout/>
+    </>
   )
 }
-
 export default Home

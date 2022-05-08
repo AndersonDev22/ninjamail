@@ -1,3 +1,5 @@
+import { backgroundClip } from 'html2canvas/dist/types/css/property-descriptors/background-clip';
+import { display } from 'html2canvas/dist/types/css/property-descriptors/display';
 import styled from 'styled-components';
 
 const Btn = styled.button`
@@ -11,6 +13,15 @@ const Btn = styled.button`
   font-weight: 900;
   line-height: 25px;
   letter-spacing: 1.05px;
+  border:none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    height: 2.6rem;
+    width:8rem;
+    font-size:13px;
+    padding:
+  }
 `;
 
 interface TextProps {
@@ -18,7 +29,7 @@ interface TextProps {
 }
 
 export default function ButtonWhite(props:TextProps) {
-  
+
   return(
     <Btn>
       {props.text}

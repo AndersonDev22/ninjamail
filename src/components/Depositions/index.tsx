@@ -14,6 +14,7 @@ const Container = styled.div`
   width:100%;
   height:37rem;
   max-width:90rem;
+  background:transparent;
 
   h4{
     width:57%;
@@ -44,7 +45,7 @@ const GroupText = styled.div`
   flex-direction:column;
   position:absolute;
   margin:1rem;
-    
+
  h1{
     text-align:left;
     color: #FFFFFF;

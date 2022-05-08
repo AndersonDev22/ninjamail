@@ -10,6 +10,12 @@ const Container = styled.div`
   width:100%;
   height:42rem;
   max-width:90rem;
+  background:transparent;
+
+  @media (max-width: 768px) {
+    width:48rem;
+    padding:1rem;
+  }
 `;
 
 const ContainerGroupImgText = styled.div`
@@ -17,6 +23,11 @@ const ContainerGroupImgText = styled.div`
   justify-content:space-between;
   width:46rem;
   margin-top:5rem;
+
+  @media (max-width: 768px) {
+    width:30rem;
+  }
+
 `;
 
 const GroupText = styled.section`
@@ -27,6 +38,10 @@ const GroupText = styled.section`
   justify-content:left;
   flex-direction:column;
 
+  @media (max-width: 768px) {
+    width:13rem;
+  }
+
   h1{
     font-size:44px;
      font-weight:900;
@@ -34,6 +49,12 @@ const GroupText = styled.section`
      line-height: 48px;
      font-family: 'Playfair Display';
      margin-bottom:1.5rem;
+
+
+  @media (max-width: 768px) {
+    font-size:28px;
+  }
+
   }
 
   h2{
@@ -46,6 +67,12 @@ const GroupText = styled.section`
     font-weight: 500;
     font-size: 19px;
     line-height: 26px;
+    max-width:100%;
+
+    @media (max-width: 768px) {
+    font-size:12px;
+  }
+
   }
 `;
 
@@ -57,6 +84,10 @@ const GroupImg = styled.div`
   display:flex;
   justify-content:left;
   flex-direction:column;
+
+  @media (max-width: 768px) {
+    width:13rem;
+  }
 
   h2{
     width:16rem;

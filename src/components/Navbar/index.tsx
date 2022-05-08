@@ -5,15 +5,21 @@ import NinjaMailLogo from '../../../public/images/NinjaMailLogo.png'
 
 const Nav = styled.nav`
   background: #FFFFFF;
-  width:100%;
+  width:90rem;
   height:6rem;
   top:0;
   position:fixed;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  max-width:90rem;
+  max-width:100%;
   z-index:100;
+
+
+  @media (max-width: 768px) {
+    width:48rem;
+  }
+
 `;
 
 const Logo = styled.div`
@@ -37,8 +43,10 @@ const Text = styled.h4`
 
 const Menu = styled.div`
   display:flex;
+  width:42.5rem;
   justify-content:space-between;
   align-items:center;
+  max-width:100%;
 `;
 
 const Btn = styled.button`
@@ -51,7 +59,9 @@ const Btn = styled.button`
   font-size:17px;
   line-height:20px;
   text-align:center;
+  border:none;
 `;
+
 export default function Navbar() {
   return (
     <Nav>

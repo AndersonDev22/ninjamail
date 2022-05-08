@@ -5,9 +5,11 @@ const Container = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
+  flex-direction:column;
   width:100%;
   height:42rem;
   max-width:90rem;
+  background-color:transparent;
   `;
 
 const Section = styled.section`
@@ -16,7 +18,7 @@ justify-content:center;
 flex-direction:column;
 align-items:center;
 background:url(images/Video.svg) no-repeat center;
-background-size:contain;  
+background-size:contain;
 display:flex;
 /* justify-content:space-between; */
 width:59rem;
@@ -43,7 +45,7 @@ export const LearnNow = () => {
         <ButtonWhite text="LEARN HOW"/>
 
       </Section>
-      
+
     </Container>
   )
 }

@@ -8,6 +8,8 @@ export default createGlobalStyle`
   }
 
   body{
+    display:flex;
+    justify-content:center;
     background:"#ffffff";
     color:"#000000";
   }

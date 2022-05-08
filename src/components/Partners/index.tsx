@@ -12,10 +12,15 @@ const Container = styled.div`
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  width:100%;
-  height:42rem;
-  max-width:90rem;
-  `;
+  width:90rem;
+  height:24rem;
+  max-width:100%;
+  background:transparent;
+
+  @media (max-width: 768px) {
+    height: 17.6rem;
+  }
+`;
 
 const Title = styled.h1`
   width:30rem;
@@ -26,6 +31,12 @@ const Title = styled.h1`
   line-height: 48px;
   font-family: 'Playfair Display';
   margin:1rem;
+
+  @media (max-width: 768px) {
+    width:20rem;
+    font-size:28px;
+    line-height: 36px;
+  }
 `;
 
 const GroupImage = styled.div`
@@ -33,9 +44,26 @@ const GroupImage = styled.div`
   justify-content:space-between;
   width:58rem;
   margin:2.4rem;
+  max-width:100%;
+
+
+  @media (max-width: 768px) {
+    width:40rem;
+    margin:1rem;
+  }
+
 
 
 `;
+
+const ContainerImage = styled.figure`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 3rem;
+  margin:0 1rem;
+`;
+
 export default function Partners() {
   return (
     <Container>
@@ -46,30 +74,40 @@ export default function Partners() {
       </Title>
 
       <GroupImage>
-        <Image
-          src={LogoLastKnight}
-          alt="Logomarca da Last Knight"
-        />
+        <ContainerImage>
+          <Image
+            src={LogoLastKnight}
+            alt="Logomarca da Last Knight"
+          />
+        </ContainerImage>
 
-        <Image
-          src={LogoDragonEye}
-          alt="Logomarca da Dragon Eye"
-        />
+        <ContainerImage>
+          <Image
+            src={LogoDragonEye}
+            alt="Logomarca da Dragon Eye"
+          />
+        </ContainerImage>
 
-        <Image
-          src={LogoQuestai}
-          alt="Logomarca da Quest ai"
-        />
+        <ContainerImage>
+          <Image
+            src={LogoQuestai}
+            alt="Logomarca da Quest ai"
+          />
+        </ContainerImage>
 
-        <Image
-          src={LogoRadioTee}
-          alt="Logomarca da RadioTee"
-        />
+        <ContainerImage>
+          <Image
+            src={LogoRadioTee}
+            alt="Logomarca da RadioTee"
+          />
+        </ContainerImage>
 
-        <Image
-          src={LogoGameCommerce}
-          alt="Logomarca da GameCommerce"
-        />
+        <ContainerImage>
+          <Image
+            src={LogoGameCommerce}
+            alt="Logomarca da GameCommerce"
+          />
+        </ContainerImage>
 
       </GroupImage>
 

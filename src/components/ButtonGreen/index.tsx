@@ -12,6 +12,7 @@ const Btn = styled.button`
   line-height: 25px;
   letter-spacing: 1.05px;
   border:3px solid #4ba87d;
+  cursor: pointer;
 `;
 
 interface TextProps {
@@ -19,7 +20,7 @@ interface TextProps {
 }
 
 export default function ButtonGreen(props:TextProps) {
-  
+
   return(
     <Btn>
       {props.text}
