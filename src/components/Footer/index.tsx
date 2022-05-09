@@ -59,7 +59,7 @@ const List = styled.ul`
 
   li{
     list-style:none;
-    margin-bottom:.5rem;
+    margin-bottom:7px;
   }
 
   a{

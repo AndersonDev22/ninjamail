@@ -46,14 +46,11 @@ const GroupImage = styled.div`
   margin:2.4rem;
   max-width:100%;
 
-
   @media (max-width: 768px) {
+    padding:0 20px;
     width:768px;
     height:257px;
   }
-
-
-
 `;
 
 const ContainerImage = styled.figure`

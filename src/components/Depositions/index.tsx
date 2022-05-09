@@ -6,7 +6,6 @@ import PhotoHappyWoman from '../../../public/images/PhotoHappyWoman.svg'
 import ButtonGreen from "../ButtonGreen";
 
 const Container = styled.div`
-  border: 2px solid;
   padding:4rem 10.3rem;
   display:flex;
   justify-content:center;
@@ -36,20 +35,17 @@ const Container = styled.div`
     font-size: 21px;
     line-height: 25px;
     letter-spacing: 1.05px;
-    padding:1rem;
     text-align:left;
 
   @media (max-width: 768px) {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.65px;
-    padding:.6rem;
   }
   }
 `;
 
 const GroupImages = styled.div`
-  border: 2px solid green;
   margin-top:1rem;
   display:flex;
   justify-content:space-between;
@@ -63,12 +59,15 @@ const GroupImages = styled.div`
 `;
 
 const GroupText = styled.div`
-  border: 2px solid blue;
   display:flex;
   justify-content:flex-start;
   flex-direction:column;
   position:absolute;
-  margin:1rem;
+  margin:16px;
+
+  @media (max-width: 768px) {
+      margin:12px;
+    }
 
  h1{
     text-align:left;
@@ -78,6 +77,11 @@ const GroupText = styled.div`
     font-weight: 900;
     font-size: 34px;
     line-height: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 
   h2{
@@ -87,12 +91,16 @@ const GroupText = styled.div`
     font-weight: 700;
     font-size: 19px;
     line-height: 22px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
 `;
 
 const ContDepositions = styled.div`
-  border: 2px solid red;
   display:flex;
   align-items:flex-end;
 
@@ -102,15 +110,16 @@ const ContDepositions = styled.div`
 `;
 
 const GroupInputButton = styled.div`
-border: 2px solid blue;
   display:flex;
-  justify-content:center;
-  gap:1.7rem;
+  justify-content:left;
+  flex-wrap:wrap;
+  gap:10px;
   width:90%;
   max-width:90rem;
 
   @media (max-width: 768px) {
-    width:27rem;
+    width:440px;
+    height:70px;
   }
 
   input{
@@ -132,6 +141,7 @@ border: 2px solid blue;
     height:42px;
     font-size: 13px;
     letter-spacing: 0.65px;
+    margin-right:12px;
   }
 
     :focus{
@@ -226,9 +236,9 @@ export const Depositions = () => {
       <GroupInputButton>
         <input type="text" placeholder="Enter your email" />
         <ButtonGreen text="JOIN OUR LIST"></ButtonGreen>
+        <h4>Thanks! Email received.</h4>
       </GroupInputButton>
 
-      <h4>Thanks! Email received.</h4>
     </Container>
 
   )
