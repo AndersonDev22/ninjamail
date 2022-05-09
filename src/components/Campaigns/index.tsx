@@ -4,42 +4,17 @@ import PhotoGirl from '../../../public/images/PhotoGirl.svg'
 import PhotoGroup from '../../../public/images/PhotoGroup.svg'
 
 const Container = styled.div`
-  padding:4rem 10.3rem;
   display:flex;
+  width:1440px;
+  height:3932px;
+  max-width:1440px;
+  padding:4rem 10.3rem;
   justify-content:space-between;
-  width:100%;
-  height:42rem;
-  max-width:90rem;
-  background:transparent;
 
   @media (max-width: 768px) {
     width:768px;
     height:432px;
-  }
-`;
-
-const ContainerGroupImgText = styled.div`
-  display:flex;
-  justify-content:space-between;
-  width:46rem;
-  margin-top:5rem;
-
-  @media (max-width: 768px) {
-    width:30rem;
-  }
-
-`;
-
-const GroupText = styled.section`
-  margin-top:5rem;
-  width:23rem;
-  height:20rem;
-  display:flex;
-  justify-content:left;
-  flex-direction:column;
-
-  @media (max-width: 768px) {
-    width:13rem;
+    padding:20px 40px;
   }
 
   h1{
@@ -48,31 +23,62 @@ const GroupText = styled.section`
      font-style:normal;
      line-height: 48px;
      font-family: 'Playfair Display';
-     margin-bottom:1.5rem;
+     margin-bottom:24px;
 
-
-  @media (max-width: 768px) {
-    font-size:28px;
-  }
-
+     @media (max-width: 768px) {
+        font-size:28px;
+        line-height: 31px;
+        margin-bottom:18px;
+      }
   }
 
   h2{
-    width:22rem;
-    height:10rem;
+    width:16rem;
     text-align:left;
-    padding:0.5rem;
+    padding:1rem;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 26px;
-    max-width:100%;
 
     @media (max-width: 768px) {
-    font-size:12px;
+      width:209px;
+      height:79px;
+      font-size:12px;
+      line-height:16px;
+    }
   }
 
+  h3{
+    width:16rem;
+    text-align:left;
+    padding:1rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4ba87d;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+`;
+
+const ContainerGroupImgText = styled.div`
+  display:flex;
+  justify-content:space-between;
+  width:46rem;
+  margin-top:60px;
+
+  @media (max-width: 768px) {
+    width:445px;
+    height:290px;
+    margin-top:70px;
+    margin-top:50px;
   }
 `;
 
@@ -86,30 +92,29 @@ const GroupImg = styled.div`
   flex-direction:column;
 
   @media (max-width: 768px) {
-    width:13rem;
+    width:209px;
+    height:290px;
+  }
+`;
+
+const GroupText = styled.section`
+  margin-top:60px;
+  width:23rem;
+  height:20rem;
+  display:flex;
+  justify-content:left;
+  flex-direction:column;
+
+  @media (max-width: 768px) {
+    width:209px;
+    height:206px;
+    margin-top:40px;
   }
 
   h2{
-    width:16rem;
-    text-align:left;
-    padding:1rem;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  h3{
-    width:16rem;
-    text-align:left;
-    padding:1rem;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
-    color: #4ba87d;
+    @media (max-width: 768px) {
+    padding:0;
+    }
   }
 `;
 
