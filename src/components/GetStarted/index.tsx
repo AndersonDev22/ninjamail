@@ -16,6 +16,11 @@ const Container = styled.div`
     width:768px;
     height:257px;
   }
+
+  @media (max-width: 3200px) {
+    width:320px;
+    height:310px;
+  }
 `;
 
 const Section = styled.section`
@@ -43,6 +48,12 @@ const Section = styled.section`
 
     @media (max-width: 768px) {
     font-size:42px;
+    }
+
+    @media (max-width: 3200px) {
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom:40px;
     }
   }
 `;

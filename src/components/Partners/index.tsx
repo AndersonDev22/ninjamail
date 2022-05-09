@@ -15,10 +15,14 @@ const Container = styled.div`
   width:90rem;
   height:24rem;
   max-width:100%;
-  background:transparent;
 
   @media (max-width: 768px) {
     height: 17.6rem;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:500px;
   }
 `;
 
@@ -37,6 +41,11 @@ const Title = styled.h1`
     font-size:28px;
     line-height: 36px;
   }
+
+  @media (max-width: 320px) {
+    width:280px;
+    font-size: 26px;
+  }
 `;
 
 const GroupImage = styled.div`
@@ -51,6 +60,13 @@ const GroupImage = styled.div`
     width:768px;
     height:257px;
   }
+
+  @media (max-width: 320px) {
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    width:280px;
+  }
 `;
 
 const ContainerImage = styled.figure`
@@ -59,7 +75,13 @@ const ContainerImage = styled.figure`
   align-items:center;
   height: 3rem;
   margin:0 1rem;
+
+  @media (max-width: 320px) {
+  margin:15px 5px;
+  }
 `;
+
+
 
 export default function Partners() {
   return (

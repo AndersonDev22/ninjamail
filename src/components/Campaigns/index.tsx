@@ -4,6 +4,7 @@ import PhotoGirl from '../../../public/images/PhotoGirl.svg'
 import PhotoGroup from '../../../public/images/PhotoGroup.svg'
 
 const Container = styled.div`
+/* border: 1px solid goldenrod; */
   display:flex;
   width:1440px;
   height:3932px;
@@ -15,6 +16,14 @@ const Container = styled.div`
     width:768px;
     height:370px;
     padding:20px 40px;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:820px;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
   }
 
   h1{
@@ -69,6 +78,7 @@ const Container = styled.div`
 `;
 
 const ContainerGroupImgText = styled.div`
+/* border: 2px solid magenta; */
   display:flex;
   justify-content:space-between;
   width:46rem;
@@ -77,9 +87,18 @@ const ContainerGroupImgText = styled.div`
   @media (max-width: 768px) {
     width:445px;
     height:290px;
-    margin-top:70px;
     margin-top:50px;
   }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:591px;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin-top:10px;
+  }
+
 `;
 
 const GroupImg = styled.div`
@@ -109,6 +128,10 @@ const GroupText = styled.section`
     width:209px;
     height:206px;
     margin-top:40px;
+  }
+
+  @media (max-width: 320px) {
+  margin-top:10px;
   }
 
   h2{

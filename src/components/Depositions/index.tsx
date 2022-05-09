@@ -18,13 +18,15 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     width:768px;
-    height:432px;
+    height:845px;
   }
 
-  /* @media (max-width: 320px) {
+  @media (max-width: 320px) {
     width:320px;
-    height:3483px;
-  } */
+    height:870px;
+    padding:0;
+    align-items:center;
+  }
 
   h4{
     width:57%;
@@ -42,7 +44,11 @@ const Container = styled.div`
     line-height: 15px;
     letter-spacing: 0.65px;
   }
+
+  @media (max-width: 320px) {
+
   }
+}
 `;
 
 const GroupImages = styled.div`
@@ -55,6 +61,14 @@ const GroupImages = styled.div`
 
   @media (max-width: 768px) {
    width: 44rem;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:591px;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
   }
 `;
 
@@ -82,6 +96,10 @@ const GroupText = styled.div`
       font-size: 22px;
       line-height: 26px;
     }
+
+    @media (max-width: 320px) {
+      font-size: 22px;
+    }
   }
 
   h2{
@@ -107,6 +125,14 @@ const ContDepositions = styled.div`
   @media (max-width: 768px) {
    width: 14rem;
   }
+
+  @media (max-width: 320px) {
+    width:223px;
+    height:157px;
+    justify-content: center;
+    /* flex-direction:column; */
+    padding:10px;
+  }
 `;
 
 const GroupInputButton = styled.div`
@@ -120,6 +146,15 @@ const GroupInputButton = styled.div`
   @media (max-width: 768px) {
     width:440px;
     height:70px;
+  }
+
+  @media (max-width: 320px) {
+    width:280px;
+    height:150px;
+    flex-wrap:none;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center
   }
 
   input{
@@ -144,6 +179,11 @@ const GroupInputButton = styled.div`
     margin-right:12px;
   }
 
+  @media (max-width: 320px) {
+    width:280px;
+    height:42px;
+  }
+
     :focus{
       border:2px solid #4ba87d;
 
@@ -156,11 +196,17 @@ const Title = styled.section`
   width:80%;
   height:20rem;
   display:flex;
-  justify-content:left;
-  flex-direction:column;
+  justify-content:center;
+  text-align:center;
 
   @media (max-width: 768px) {
     width:37rem;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:150px;
+    padding:5px;
   }
 
   h1{
@@ -172,9 +218,15 @@ const Title = styled.section`
     text-align:center;
 
     @media (max-width: 768px) {
+
       font-size:28px;
       line-height: 36px;
-  }
+    }
+
+    @media (max-width: 320px) {
+      width:240px;
+      font-size:22px;
+    }
   }
 `;
 

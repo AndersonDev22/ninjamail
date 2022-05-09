@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ButtonGreen from "../ButtonGreen";
 
 const Container = styled.div`
+  border:1px solid;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -12,6 +13,11 @@ const Container = styled.div`
   @media (max-width: 768px) {
     width:768px;
     height:432px;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:320px;
   }
 `;
 
@@ -27,6 +33,11 @@ const Section = styled.section`
   @media (max-width: 768px) {
     width:711px;
     height:250px;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:300px;
   }
 `;
 

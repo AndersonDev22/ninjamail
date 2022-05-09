@@ -19,6 +19,12 @@ const Nav = styled.nav`
     width:768px;
     height:66px;
   }
+
+  @media (max-width: 320px) {
+    border:1px solid;
+    width:320px;
+    height:56px;
+  }
 `;
 
 const Logo = styled.div`
@@ -29,6 +35,11 @@ const Logo = styled.div`
     margin-left:20px;
     width:155px;
     height:24px;
+  }
+
+  @media (max-width: 500px) {
+    width:145px;
+    height:20px;
   }
 `;
 
@@ -65,6 +76,11 @@ const Menu = styled.div`
   @media (max-width: 768px) {
    width:470px;
    height:25px;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    display:none;
   }
 `;
 

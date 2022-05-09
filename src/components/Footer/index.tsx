@@ -17,6 +17,11 @@ const Container = styled.div`
     width:768px;
     height:257px;
   }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:480px;
+  }
 `;
 
 const FooterLinks = styled.div`

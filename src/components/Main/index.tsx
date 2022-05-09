@@ -23,10 +23,10 @@ const Container = styled.div`
     height:2565px;
   }
 
-  /* @media (max-width: 320px) {
+  @media (max-width:320px) {
     width:320px;
     height:3483px;
-  } */
+  }
 `;
 
 const MainContainer = styled.div`
@@ -41,6 +41,11 @@ const MainContainer = styled.div`
    @media (max-width: 768px) {
     width:768px;
     height:1728px;
+  }
+
+  @media (max-width: 320px) {
+    width:320px;
+    height:2364px;
   }
 `;
 

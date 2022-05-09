@@ -19,6 +19,12 @@ const Container = styled.div`
     margin:0 68px;
   }
 
+  @media (max-width: 320px) {
+    width:320px;
+    height:175px;
+    margin:40px 0;
+  }
+
   h1{
     color:#FFFFFF;
     font-size:60px;
@@ -31,6 +37,12 @@ const Container = styled.div`
     @media (max-width: 768px) {
       font-size: 38px;
       line-height: 51px;
+    }
+
+    @media (max-width: 320px) {
+      width:250px;
+      font-size:22px;
+      line-height: 29px;
     }
   }
 `;
