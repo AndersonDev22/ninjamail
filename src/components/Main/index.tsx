@@ -26,6 +26,7 @@ const Container = styled.div`
   @media (max-width:320px) {
     width:320px;
     height:3483px;
+    background-size:cover;
   }
 `;
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 import NinjaMailLogo from '../../../public/images/NinjaMailLogo.png'
+import Burguer from "../Burger";
 
 const Nav = styled.nav`
   background: #FFFFFF;
@@ -21,7 +22,6 @@ const Nav = styled.nav`
   }
 
   @media (max-width: 320px) {
-    border:1px solid;
     width:320px;
     height:56px;
   }
@@ -38,7 +38,7 @@ const Logo = styled.div`
   }
 
   @media (max-width: 500px) {
-    width:145px;
+    width:135px;
     height:20px;
   }
 `;
@@ -95,6 +95,12 @@ const Btn = styled.button`
   line-height:20px;
   text-align:center;
   border:none;
+  cursor: pointer;
+
+  :hover{
+    transition:0.3s;
+    filter:brightness(0.9);
+  }
 
   @media (max-width: 768px) {
     width:125px;
@@ -136,6 +142,8 @@ export default function Navbar() {
         </Btn>
 
       </Menu>
+
+      <Burguer/>
 
     </Nav>
   )

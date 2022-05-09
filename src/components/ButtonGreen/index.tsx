@@ -14,6 +14,11 @@ const Btn = styled.button`
   border:3px solid #4ba87d;
   cursor: pointer;
 
+  :hover{
+    transition:0.3s;
+    filter:brightness(0.9);
+  }
+
   @media (max-width: 768px) {
     width:132px;
     height:2.6rem;

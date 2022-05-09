@@ -137,7 +137,7 @@ const ContDepositions = styled.div`
 
 const GroupInputButton = styled.div`
   display:flex;
-  justify-content:left;
+  justify-content:center;
   flex-wrap:wrap;
   gap:10px;
   width:90%;

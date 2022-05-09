@@ -23,6 +23,7 @@ const Container = styled.div`
   @media (max-width: 320px) {
     width:320px;
     height:500px;
+    margin-bottom:20px;
   }
 `;
 

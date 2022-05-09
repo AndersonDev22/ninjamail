@@ -2,7 +2,6 @@ import styled from "styled-components";
 import ButtonGreen from "../ButtonGreen";
 
 const Container = styled.div`
-  border:1px solid;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -111,6 +110,12 @@ const BtnWhite = styled.button`
   letter-spacing: 1.05px;
   border:none;
   cursor: pointer;
+  border: 2px solid #4ba87d;
+
+  :hover{
+    transition:0.3s;
+    filter:brightness(0.9);
+  }
 
   @media (max-width: 768px) {
     width:132px;

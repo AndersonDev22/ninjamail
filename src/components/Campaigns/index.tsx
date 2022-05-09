@@ -131,7 +131,7 @@ const GroupText = styled.section`
   }
 
   @media (max-width: 320px) {
-  margin-top:10px;
+  margin-top:30px;
   }
 
   h2{

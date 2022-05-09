@@ -8,35 +8,22 @@ const Container = styled.div`
   justify-content:center;
   flex-direction:column;
   align-items:center;
-  width:100%;
-  height:24rem;
-  max-width:90rem;
+  width:1440px;
+  height:384px;
+  max-width:100%;
 
   @media (max-width: 768px) {
     width:768px;
     height:257px;
   }
 
-  @media (max-width: 3200px) {
+  @media (max-width: 320px) {
     width:320px;
     height:310px;
   }
-`;
 
-const Section = styled.section`
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
-  align-items:center;
-  width:59rem;
-  height:32rem;
-  max-width:100%;
+ h1{
 
-  @media (max-width: 768px) {
-
-  }
-
-  h1{
     color:#FFFFFF;
     font-size:60px;
     font-weight:900;
@@ -44,16 +31,18 @@ const Section = styled.section`
     line-height: 80px;
     font-family: 'Playfair Display';
     margin-bottom:1rem;
-    text-align: center;
 
     @media (max-width: 768px) {
-    font-size:42px;
+      font-size:42px;
+      line-height: 51px;
     }
 
     @media (max-width: 3200px) {
-      font-size: 42px;
-      line-height: 48px;
+      width:300px;
+      font-size:45px;
+      line-height:48px;
       margin-bottom:40px;
+      text-align:center;
     }
   }
 `;
@@ -63,12 +52,8 @@ export const GetStarted = () => {
   return (
     <Container>
 
-      <Section>
-
         <h1>Get started today!</h1>
         <ButtonWhite text="PICK A PLAN"/>
-
-      </Section>
 
     </Container>
   )

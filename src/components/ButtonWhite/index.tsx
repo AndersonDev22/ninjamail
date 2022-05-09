@@ -16,11 +16,23 @@ const Btn = styled.button`
   border:none;
   cursor: pointer;
 
+  :hover{
+    transition:0.3s;
+    filter:brightness(0.9);
+  }
+
   @media (max-width: 768px) {
     height: 2.6rem;
     width:8rem;
     font-size:13px;
-    padding:
+  }
+
+  @media (max-width: 320px) {
+    height: 45px;
+    width:130px;
+    font-size:14px;
+    letter-spacing: 0.65px;
+
   }
 `;
 
