@@ -48,8 +48,8 @@ const GroupImage = styled.div`
 
 
   @media (max-width: 768px) {
-    width:40rem;
-    margin:1rem;
+    width:768px;
+    height:257px;
   }
 
 

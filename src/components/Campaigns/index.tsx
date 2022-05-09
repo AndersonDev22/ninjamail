@@ -13,8 +13,8 @@ const Container = styled.div`
   background:transparent;
 
   @media (max-width: 768px) {
-    width:48rem;
-    padding:1rem;
+    width:768px;
+    height:432px;
   }
 `;
 

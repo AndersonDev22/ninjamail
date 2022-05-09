@@ -13,6 +13,13 @@ const Btn = styled.button`
   letter-spacing: 1.05px;
   border:3px solid #4ba87d;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width:9rem;
+    height:2.6rem;
+    font-size:13px;
+    letter-spacing:0.65px;
+  }
 `;
 
 interface TextProps {

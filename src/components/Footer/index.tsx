@@ -14,9 +14,9 @@ const Container = styled.div`
   background:transparent;
 
   @media (max-width: 768px) {
-    height:18rem;
+    width:768px;
+    height:257px;
   }
-
 `;
 
 const FooterLinks = styled.div`

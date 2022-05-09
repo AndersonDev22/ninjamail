@@ -13,8 +13,8 @@ const Container = styled.div`
   max-width:90rem;
 
   @media (max-width: 768px) {
-    height: 15rem;
-
+    width:768px;
+    height:257px;
   }
 `;
 

@@ -10,6 +10,11 @@ const Container = styled.div`
   height:42rem;
   max-width:90rem;
   background-color:transparent;
+
+  @media (max-width: 768px) {
+    width:768px;
+    height:432px;
+  }
   `;
 
 const Section = styled.section`
