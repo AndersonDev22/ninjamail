@@ -85,7 +85,6 @@ export const Nav = styled.div`
       flex-direction: column;
       margin-left: -40px;
       transition: transform 0.5s ease-in-out;
-      backdrop-filter: blur(4px);
     }
 
   }

@@ -11,10 +11,15 @@
         "plugin:@typescript-eslint/parser",
         "prettier/@typescript-eslint",
         "prettier/standard",
-        "prettier/react"
+        "prettier/react",
+
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
 
     ],
-    "parser": "@typescript-eslint/parser",
+    "root": true,
+    "parser": "@typescript-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -24,7 +29,7 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint",
+        "@typescript-eslint/parser",
         "prettier"
     ],
     "rules": {
