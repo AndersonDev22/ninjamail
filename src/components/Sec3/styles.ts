@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import Image from "next/image";
-import PhotoGirl from '../../../public/images/PhotoGirl.svg'
-import PhotoGroup from '../../../public/images/PhotoGroup.svg'
 
-const Container = styled.div`
-/* border: 1px solid goldenrod; */
+export const Container = styled.div`
   display:flex;
   width:1440px;
-  height:3932px;
+  height:592px;
   max-width:1440px;
   padding:4rem 10.3rem;
   justify-content:space-between;
+  margin-bottom:110px;
 
   @media (max-width: 768px) {
     width:768px;
@@ -32,7 +29,7 @@ const Container = styled.div`
      font-style:normal;
      line-height: 48px;
      font-family: 'Playfair Display';
-     margin-bottom:24px;
+     margin-bottom:20px;
 
      @media (max-width: 768px) {
         font-size:28px;
@@ -45,11 +42,11 @@ const Container = styled.div`
     width:16rem;
     text-align:left;
     padding:1rem;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-family:'Raleway';
+    font-style:normal;
+    font-weight:500;
+    font-size:16px;
+    line-height:26px;
 
     @media (max-width: 768px) {
       width:209px;
@@ -77,7 +74,7 @@ const Container = styled.div`
   }
 `;
 
-const ContainerGroupImgText = styled.div`
+export const ContainerGroupImgText = styled.div`
 /* border: 2px solid magenta; */
   display:flex;
   justify-content:space-between;
@@ -101,7 +98,7 @@ const ContainerGroupImgText = styled.div`
 
 `;
 
-const GroupImg = styled.div`
+export const GroupImg = styled.div`
   top:2rem;
   width:20rem;
   height:30rem;
@@ -116,10 +113,10 @@ const GroupImg = styled.div`
   }
 `;
 
-const GroupText = styled.section`
+export const GroupText = styled.section`
   margin-top:60px;
-  width:23rem;
-  height:20rem;
+  width:368px;
+  height:350px;
   display:flex;
   justify-content:left;
   flex-direction:column;
@@ -140,66 +137,3 @@ const GroupText = styled.section`
     }
   }
 `;
-
-export const Campaigns = () => {
-  return (
-    <Container>
-
-      <GroupImg>
-
-        <Image
-          src={PhotoGirl}
-          alt="PhotoGirl"
-        />
-
-        <h2>
-          Launch campaigns but also find
-          new customers. Our unique platform
-          handles campaigns from start to end.
-        </h2>
-
-        <h3>Learn More &#8250;</h3>
-      </GroupImg>
-
-      <ContainerGroupImgText>
-
-        <GroupImg>
-
-          <Image
-            src={PhotoGroup}
-            alt="PhotoGirl"
-          />
-
-          <h2>
-            Start building and sharing with your
-            team today. NinjaMail is renowned for
-            its industry leading team collaboration tools.
-          </h2>
-
-          <h3>Learn More &#8250;</h3>
-
-        </GroupImg>
-
-        <GroupText>
-
-          <h1>
-            The source for
-            proven, engaging
-            email campaigns
-          </h1>
-
-          <h2>
-            Whether you&#8217;re a startup, small
-            business, e-commerce store, or
-            want to promote your app, NinjaMail
-            has the feature set tailored for
-            your business.
-          </h2>
-
-        </GroupText>
-
-      </ContainerGroupImgText>
-
-    </Container>
-  )
-}

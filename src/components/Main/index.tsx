@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { Campaigns } from "../Campaigns";
-import { Depositions } from "../Depositions";
+import Sec3 from "../Sec3";
+import Sec4 from "../Sec4";
 import Footer from "../Footer";
-import { GetStarted } from "../GetStarted";
+import GetStarted from "../GetStarted";
 import { Hero } from "../Hero/Hero";
-import { LearnNow } from "../LearnNow";
+import Video from "../Video";
 import Navbar from "../Navbar";
-import Partners from "../Partners";
+import Sec5 from "../Sec5";
 
 const Container = styled.div`
   display:flex;
@@ -56,11 +56,11 @@ export default function MainLayout() {
       <Navbar />
       <MainContainer>
         <Hero />
-        <LearnNow />
-        <Campaigns />
-        <Depositions />
+        <Video />
+        <Sec3 />
+        <Sec4 />
       </MainContainer>
-      <Partners />
+      <Sec5 />
       <GetStarted />
       <Footer />
     </Container>

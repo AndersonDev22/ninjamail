@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import ButtonWhite from "../ButtonWhite";
 
-const Container = styled.div`
+export const Container = styled.div`
   display:flex;
   width:1440px;
-  height:3932px;
+  height:592px;
   max-width:1440px;
   justify-content:center;
   align-items:center;
-  flex-direction:column;
-  background:url(images/Video.svg) no-repeat center;
-  background-size:contain;
+  margin-bottom:44px;
 
   @media (max-width: 768px) {
     width:632px;
@@ -45,15 +42,18 @@ const Container = styled.div`
       line-height: 29px;
     }
   }
+
+  .ImageVideo{
+    width:944px;
+    height:531px;
+    position:relative;
+  }
+
+  .TitleAndButton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:absolute;
+  }
 `;
-
-export const LearnNow = () => {
-  return (
-    <Container>
-
-        <h1>Reach More Customers</h1>
-        <ButtonWhite text="LEARN HOW"/>
-
-    </Container>
-  )
-}

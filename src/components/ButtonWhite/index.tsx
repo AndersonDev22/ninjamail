@@ -1,5 +1,3 @@
-import { backgroundClip } from 'html2canvas/dist/types/css/property-descriptors/background-clip';
-import { display } from 'html2canvas/dist/types/css/property-descriptors/display';
 import styled from 'styled-components';
 
 const Btn = styled.button`

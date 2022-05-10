@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 import NinjaMailLogo from '../../../public/images/NinjaMailLogo.png'
-import Burguer from "../Burger";
 
 const Nav = styled.nav`
   background: #FFFFFF;
@@ -24,6 +23,19 @@ const Nav = styled.nav`
   @media (max-width: 320px) {
     width:320px;
     height:56px;
+
+   #check:checked ~ #Menu{
+     /* display:flex;
+    margin-left:0;
+    width:320px;
+    height:200px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:absolute;
+    top:50px;
+    background:#ffffff; */
+    }
   }
 `;
 
@@ -59,6 +71,11 @@ const Text = styled.h4`
     margin-right:5px;
     padding:2px;
 
+    @media (max-width: 768px) {
+    font-size: 15px;
+    line-height:2;
+    }
+
   }
 
   &:Hover{
@@ -78,8 +95,7 @@ const Menu = styled.div`
    height:25px;
   }
 
-  @media (max-width: 320px) {
-    width:320px;
+  @media (max-width: 320px){
     display:none;
   }
 `;
@@ -113,6 +129,76 @@ const Btn = styled.button`
   }
 `;
 
+const ContainerMenu = styled.div`
+  display:none;
+  margin-top:5px;
+  justify-content:center;
+  align-items:center;
+  width:30px;
+  margin-right:20px;
+
+@media screen and (max-width:320px) {
+
+  display:flex;
+}
+
+input{
+  border:1px solid;
+  position:absolute;
+  cursor: pointer;
+  opacity:0;
+
+  :checked + label div:nth-child(1){
+    transform: rotate(-45deg);
+    top:8px;
+  }
+
+  :checked + label div:nth-child(2){
+    opacity:0;
+  }
+
+  :checked + label div:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+  }
+}
+
+label{ //label - checkbox-menu
+
+  background:#fff;
+  display:block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  /* z-index: 20; */
+
+  div{
+    display:block;
+    position:absolute;
+    background:#000;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    transition: 0.30s ease-in-out;
+
+    :nth-child(1) {
+      top:0;
+    };
+
+    :nth-child(2) {
+      top:8px;
+    };
+
+    :nth-child(3) {
+      top:16px;
+    };
+
+  }
+}
+`;
+
 export default function Navbar() {
   return (
     <Nav>
@@ -123,7 +209,7 @@ export default function Navbar() {
         </Logo>
       </Link>
 
-      <Menu>
+      <Menu id="Menu">
         <Link href="/">
           <Text>FEATURES</Text>
         </Link>
@@ -143,8 +229,14 @@ export default function Navbar() {
 
       </Menu>
 
-      <Burguer/>
-
+      <ContainerMenu>
+      <input type="checkbox" id="check"/>
+      <label htmlFor="check">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </ContainerMenu>
     </Nav>
   )
 }
