@@ -11,12 +11,14 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width:768px;
-    height:432px;
+    height:332px;
+    margin-bottom:10px;
   }
 
   @media (max-width: 320px) {
     width:320px;
-    height:320px;
+    height:230px;
+    margin-bottom:0;
   }
 `;
 
@@ -36,13 +38,12 @@ export const Section = styled.section`
 
   @media (max-width: 320px) {
     width:320px;
-    height:300px;
+    height:290px;
   }
 `;
 
 export const GroupText = styled.div`
-
-  padding:1rem;
+  padding:16px;
   display:flex;
   justify-content:left;
   align-items:flex-start;
@@ -51,6 +52,12 @@ export const GroupText = styled.div`
   @media (max-width: 768px) {
     width:330px;
     height:432px;
+  }
+
+  @media (max-width: 320px) {
+    width:330px;
+    height:230px;
+    padding:12px;
   }
 
   h1{
@@ -78,6 +85,13 @@ export const GroupText = styled.div`
     font-size:12px;
     line-height: 16px;
   }
+
+  @media (max-width: 320px) {
+    font-size:12px;
+    line-height: 16px;
+  }
+
+
   }
 `;
 
@@ -95,6 +109,10 @@ export const GroupButton = styled.div`
     line-height: 16px;
     flex-direction:row;
     margin-top:20px;
+  }
+
+  @media (max-width: 320px) {
+  margin-left:12px;
   }
 `;
 

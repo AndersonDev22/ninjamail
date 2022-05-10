@@ -11,18 +11,18 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width:768px;
-    height:845px;
+    height:345px;
   }
 
   @media (max-width: 320px) {
     width:320px;
-    height:870px;
+    height:820px;
     padding:0;
     align-items:center;
   }
 
   h1{
-     width:850px;
+    width:850px;
     height:126px;
     max-width:1440px;
     font-size:44px;
@@ -34,13 +34,16 @@ export const Container = styled.div`
     margin:40px 0 10px 0;
 
     @media (max-width: 768px) {
-
+      width:540px;
+      height:90px;
       font-size:28px;
       line-height: 36px;
+      margin:20px 0 5px 0;
     }
 
     @media (max-width: 320px) {
       width:240px;
+      height:100px;
       font-size:22px;
     }
   }
@@ -58,13 +61,16 @@ export const Container = styled.div`
     margin-top:16px;
 
     @media (max-width: 768px) {
+      width:410px;
       font-size: 13px;
       line-height: 15px;
       letter-spacing: 0.65px;
+      margin-top:0px;
     }
 
     @media (max-width: 320px) {
-
+      text-align:center;
+      width:210px;
     }
   }
 
@@ -77,15 +83,17 @@ export const Container = styled.div`
     justify-content:space-between;
 
     @media (max-width: 768px) {
-    width: 44rem;
+      width:704px;
+      height:155px;
     }
 
     @media (max-width: 320px) {
       width:320px;
-      height:591px;
+      height:500px;
       justify-content: center;
       flex-direction:column;
       align-items:center;
+      margin-top:0;
     }
   }
 
@@ -99,7 +107,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width:440px;
-    height:70px;
+    height:50px;
   }
 
   @media (max-width: 320px) {
@@ -140,7 +148,6 @@ export const Container = styled.div`
 
     :focus{
       border:2px solid #4ba87d;
-
     }
   }
 
@@ -159,6 +166,12 @@ export const GroupText = styled.div`
   @media (max-width: 768px) {
       margin:12px;
     }
+
+  @media (max-width: 320px) {
+    width:180px;
+    height:40px;
+    margin:12px;
+  }
 
  h2{
     text-align:left;
@@ -202,7 +215,8 @@ export const ContentImage = styled.div`
   align-items:flex-end;
 
   @media (max-width: 768px) {
-   width: 14rem;
+   width: 224px;
+   height:155px;
   }
 
   @media (max-width: 320px) {

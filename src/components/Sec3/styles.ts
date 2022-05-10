@@ -5,7 +5,7 @@ export const Container = styled.div`
   width:1440px;
   height:592px;
   max-width:1440px;
-  padding:4rem 10.3rem;
+  padding:64px 165px;
   justify-content:space-between;
   margin-bottom:110px;
 
@@ -13,6 +13,7 @@ export const Container = styled.div`
     width:768px;
     height:370px;
     padding:20px 40px;
+    margin-bottom:10px;
   }
 
   @media (max-width: 320px) {
@@ -20,7 +21,9 @@ export const Container = styled.div`
     height:820px;
     justify-content:center;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
+    padding:10px;
+
   }
 
   h1{
@@ -57,7 +60,7 @@ export const Container = styled.div`
   }
 
   h3{
-    width:16rem;
+    width:256px;
     text-align:left;
     padding:1rem;
     font-family: 'Raleway';
@@ -68,6 +71,12 @@ export const Container = styled.div`
     color: #4ba87d;
 
     @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @media (max-width: 320px) {
+      width:200px;
       font-size: 12px;
       line-height: 14px;
     }
@@ -88,11 +97,11 @@ export const ContainerGroupImgText = styled.div`
   }
 
   @media (max-width: 320px) {
-    width:320px;
+    width:300px;
     height:591px;
-    justify-content:center;
+    justify-content:right;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-end;
     margin-top:10px;
   }
 
@@ -128,7 +137,7 @@ export const GroupText = styled.section`
   }
 
   @media (max-width: 320px) {
-  margin-top:30px;
+    margin:30px 80px 0 0;
   }
 
   h2{

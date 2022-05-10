@@ -15,7 +15,7 @@ import {
 export default function Footer() {
   return (
     <Container>
-      
+
       <FooterLinks>
 
         <Logo>
@@ -85,7 +85,7 @@ export default function Footer() {
 
       <RightsReserved>
         <div className="rightsReserved">
-          <h4>NinjaMail is a sample project for Quest AI.© 2019 Quest AI, All rights reserved.</h4>
+          <h3>NinjaMail is a sample project for Quest AI.© 2019 Quest AI, All rights reserved.</h3>
         </div>
 
         <div className="blockTerms">

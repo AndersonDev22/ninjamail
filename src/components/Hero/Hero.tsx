@@ -1,7 +1,7 @@
 import ButtonGreen from "../ButtonGreen";
 import { BtnWhite, Container, GroupButton, GroupText, Section } from "./styles";
 
-export const Hero = () => {
+export default function Hero() {
   return (
     <Container>
       <Section>

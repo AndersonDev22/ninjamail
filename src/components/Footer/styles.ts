@@ -31,15 +31,17 @@ export const FooterLinks = styled.div`
   max-width:100%;
 
   @media (max-width: 768px) {
-    height: 14.4rem;
-    padding:3rem 5rem;
+    width:1040px;
+    height: 230px;
+    padding:45px 105px;
   }
 
   @media (max-width: 320px) {
-    padding:none;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
-    height: 300px;
+    width:320px;
+    height:350px;
     padding:0;
  }
 `;
@@ -48,6 +50,10 @@ export const Logo = styled.div`
   width:195px;
   height:55px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width:130px;
+  }
 `;
 
 export const FooterList = styled.div`
@@ -57,17 +63,16 @@ export const FooterList = styled.div`
   justify-content:center;
 
   @media (max-width: 768px) {
-    margin-left:8rem;
+    height:180px;
+    width:264px;
   }
 
   @media (max-width: 320px) {
-    width:320px;
+    width:280px;
     height:250px;
     flex-direction:column;
     justify-content:center;
     flex-wrap:wrap;
-    margin-left:0px;
-    padding:0 10px;
   }
 
  .blockList{
@@ -80,13 +85,20 @@ export const FooterList = styled.div`
     width:140px;
     padding:5px;
     height:250px;
+    justify-content:center;
     flex-direction:column;
+    align-items:center;
     }
   }
 `;
 
 export const List = styled.ul`
     width:141px;
+
+    @media (max-width: 768px) {
+      width:100px;
+      height:180px;
+    }
 
     @media (max-width: 320px) {
         font-size:12px;
@@ -104,7 +116,6 @@ export const List = styled.ul`
     }
 
     a{
-      color:#000000;
       text-decoration:none;
       font-family: 'Raleway';
       font-style: normal;
@@ -149,6 +160,26 @@ export const RightsReserved = styled.div`
     padding:10px;
   }
 
+  h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    @media (max-width: 768px) {
+      font-size:9px;
+    }
+
+    @media (max-width: 320px) {
+      text-align:center;
+      height:20px;
+      width:280px;
+      font-size:9px;
+      line-height: 19px;
+    }
+  }
+
   h4{
     font-family: 'Raleway';
     font-style: normal;
@@ -162,8 +193,8 @@ export const RightsReserved = styled.div`
 
     @media (max-width: 320px) {
       text-align:center;
-      height:70px;
-      width:280px;
+      height:20px;
+      width:100px;
       font-size:9px;
       line-height: 19px;
     }
@@ -171,11 +202,23 @@ export const RightsReserved = styled.div`
 
   .rightsReserved{
     width:555px;
+
+    @media (max-width: 320px) {
+      width:280px;
+      height:40px;
+      margin-bottom:10px;
+    }
   }
 
   .blockTerms{
     display:flex;
     width:280px;
     justify-content:space-between;
+
+
+    @media (max-width: 320px) {
+      width:200px;
+      height:20px;
+    }
   }
 `;

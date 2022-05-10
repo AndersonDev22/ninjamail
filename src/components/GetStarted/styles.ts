@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items:center;
   flex-direction:column;
   background:#4ba87d;
-  
+
   @media (max-width: 768px) {
     width:768px;
     height:257px;
@@ -32,6 +32,7 @@ export const Container = styled.div`
     margin-bottom:32px;
 
     @media (max-width: 768px) {
+      width:750px;
       font-size:42px;
       line-height: 51px;
     }

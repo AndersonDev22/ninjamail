@@ -60,6 +60,8 @@ export const GroupImage = styled.div`
     flex-direction:column;
     align-items:center;
     width:280px;
+    margin:0px;
+    height:357px;
   }
 `;
 
