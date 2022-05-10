@@ -1,46 +1,39 @@
-import Link from "next/link";
-import Image from "next/image";
 import NinjaMailLogo from '../../../public/images/NinjaMailLogo.png'
-import { Btn, ContainerMenu, Logo, Menu, Nav, Text } from "./styles";
+import Image from "next/image"
+import {Nav} from "./styles"
 
 export default function Navbar() {
   return (
     <Nav>
 
-      <Link href="/">
-        <Logo>
-          <Image src={NinjaMailLogo} alt="logomarca ninjamail" />
-        </Logo>
-      </Link>
+    <nav className="navbar">
 
-      <Menu id="Menu">
-        <Link href="/">
-          <Text>FEATURES</Text>
-        </Link>
-        <Link href="/">
-          <Text>PRICING</Text>
-        </Link>
-        <Link href="/">
-          <Text>SERVICES</Text>
-        </Link>
-        <Link href="/">
-          <Text>PARTNERS</Text>
-        </Link>
+      <div className="navbar-container container">
 
-        <Btn type="button">
-          SIGN UP FREE
-        </Btn>
+          <input type="checkbox" name="" id=""/>
 
-      </Menu>
+          <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+          </div>
 
-      <ContainerMenu>
-      <input type="checkbox" id="check"/>
-      <label htmlFor="check">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    </ContainerMenu>
+          <ul className="menu-items">
+              <li><a href="#home">FEATURES</a></li>
+              <li><a href="#about">PRICING</a></li>
+              <li><a href="#food">SERVICES</a></li>
+              <li><a href="#food-menu">PARTNERS</a></li>
+              <li><button className="button">SIGN UP FREE</button></li>
+          </ul>
+
+          <figure className="logo">
+            <Image src={NinjaMailLogo} alt="logomarca ninjamail" />
+          </figure>
+
+      </div>
+    </nav>
+
     </Nav>
   )
 }
+

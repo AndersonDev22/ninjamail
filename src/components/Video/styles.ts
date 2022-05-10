@@ -19,7 +19,6 @@ export const Container = styled.div`
     width:320px;
     height:255px;
     margin:10px 0;
-
   }
 
   h1{
@@ -61,7 +60,6 @@ export const Container = styled.div`
     @media (max-width: 320px) {
       width:300px;
       height:400px;
-
     }
   }
 
@@ -75,9 +73,6 @@ export const Container = styled.div`
     @media (max-width: 320px) {
       width:240px;
       height:100px;
-
     }
-
-
   }
 `;
