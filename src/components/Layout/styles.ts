@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display:flex;
+  display:block;
   justify-content:center;
   flex-direction:column;
   width:100%;
   max-width:1440px;
-  min-height:100vh;
-  height:100%;
+  /* min-height:100vh; */
+  height:0 auto;
   background: url("images/Background.svg") no-repeat;
   background-size:100%;
 

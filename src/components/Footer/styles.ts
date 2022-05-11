@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-border:1px solid;
   width:1440px;
   height:443px;
   max-width:100%;
@@ -27,7 +26,7 @@ border:1px solid blue;
   display:flex;
   justify-content:space-between;
   width:1440px;
-  height:345px;
+  height:0 auto;
   padding:79px 250px;
   display:flex;
   max-width:100%;
@@ -35,7 +34,7 @@ border:1px solid blue;
   @media (max-width: 768px) {
     width:1040px;
     height: 230px;
-    padding:45px 105px;
+    padding:35px 105px;
   }
 
   @media (max-width: 320px) {

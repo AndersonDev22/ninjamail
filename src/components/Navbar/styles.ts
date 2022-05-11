@@ -26,7 +26,7 @@ export const Nav = styled.div`
     width: 100%;
     background: #fff;
     color: #000;
-    width:1440px;
+    max-width:1440px;
     height: 102px;
     z-index: 100;
 

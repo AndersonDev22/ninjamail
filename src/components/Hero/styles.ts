@@ -2,28 +2,26 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display:flex;
-  width:1440px;
-  height:592px;
+  width:100%;
+  height:590px;
   max-width:1440px;
   justify-content:center;
   align-items:center;
-  margin-bottom:40px;
 
   @media (max-width: 768px) {
-    width:768px;
+    /* width:768px; */
     height:332px;
-    margin-bottom:10px;
   }
 
   @media (max-width: 320px) {
-    width:320px;
-    height:230px;
-    margin-bottom:0;
+    /* width:320px; */
+    height:280px;
+    /* margin-bottom:0; */
   }
 `;
 
 export const Section = styled.section`
-  background:url(images/hero.svg) no-repeat right;
+  background:url("images/hero.svg") no-repeat right;
   background-size:contain;
   display:flex;
   justify-content:space-between;

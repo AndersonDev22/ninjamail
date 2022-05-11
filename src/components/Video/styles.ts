@@ -1,24 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width:1440px;
-  height:592px;
+  /* border:1px solid blue; */
+  display:flex;
+  width:100%;
+  height:650px;
   max-width:1440px;
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-bottom:44px;
+  margin-top:100px;
+  /* margin-bottom:44px; */
 
   @media (max-width: 768px) {
-    width:632px;
     height:432px;
-    margin:0 68px;
   }
 
   @media (max-width: 320px) {
-    width:320px;
-    height:255px;
-    margin:10px 0;
+    /* width:320px; */
+    height:200px;
+    /* margin:10px 0; */
   }
 
   h1{
@@ -46,20 +47,25 @@ export const Container = styled.div`
   }
 
   .ImageVideo{
+    /* border:1px solid red; */
     display:flex;
+    width:100%;
+    max-width:1440px;
     justify-content:center;
     align-items:center;
-    width:944px;
-    height:530px;
+    width:100%;
+    height:100%;
     position:relative;
 
     @media (max-width: 768px) {
-      height:155px;
+      padding:76px;
+
     }
 
     @media (max-width: 320px) {
-      width:300px;
-      height:400px;
+      padding:5px 15px;
+      /* width:300px; */
+      height:200px;
     }
   }
 
