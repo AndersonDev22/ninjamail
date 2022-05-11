@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width:1440px;
-  height:443px;
-  max-width:100%;
+  /* border:1px solid; */
+  display:flex;
+  width:100%;
+  height:400px;
+  max-width:1440px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -22,6 +24,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
+  /* border:1px solid; */
   width:30rem;
   text-align: center;
   font-size:44px;
@@ -43,7 +46,8 @@ export const Title = styled.h1`
   }
 `;
 
-export const GroupImage = styled.div`
+export const GroupLogos = styled.div`
+  /* border:1px solid; */
   display:flex;
   justify-content:space-between;
   width:944px;
@@ -67,6 +71,7 @@ export const GroupImage = styled.div`
 `;
 
 export const ContainerImage = styled.figure`
+  /* border: 1px solid; */
   display:flex;
   justify-content:center;
   align-items:center;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width:1440px;
-  height:443px;
-  max-width:100%;
+  /* border:1px solid; */
+  width:100%;
+  height:336px;
+  max-width:1440px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -29,7 +30,7 @@ export const Container = styled.div`
     font-family: 'Playfair Display';
     color:#FFFFFF;
     text-align:center;
-    margin-bottom:32px;
+    margin-bottom:41px;
 
     @media (max-width: 768px) {
       width:750px;

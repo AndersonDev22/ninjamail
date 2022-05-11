@@ -5,7 +5,7 @@ import LogoDragonEye from '../../../public/images/LogoDragonEye.svg'
 import LogoQuestai from '../../../public/images/LogoQuestai.svg'
 import LogoRadioTee from '../../../public/images/LogoRadioTee.svg'
 import LogoGameCommerce from '../../../public/images/LogoGameCommerce.svg'
-import { Container, ContainerImage, GroupImage, Title } from "./styles";
+import { Container, ContainerImage, GroupLogos, Title } from "./styles";
 
 export default function Sec5() {
   return (
@@ -16,7 +16,7 @@ export default function Sec5() {
         already use us.
       </Title>
 
-      <GroupImage>
+      <GroupLogos>
         <ContainerImage>
           <Image
             src={LogoLastKnight}
@@ -52,7 +52,7 @@ export default function Sec5() {
           />
         </ContainerImage>
 
-      </GroupImage>
+      </GroupLogos>
 
     </Container>
   )

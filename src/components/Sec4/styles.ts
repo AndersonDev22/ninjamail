@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border:1px solid;
+  /* border:1px solid; */
   display:flex;
   width:100%;
   height:630px;
@@ -102,7 +102,6 @@ export const Container = styled.div`
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:10px;
     width:668px;
     max-width:1440px;
 
@@ -127,12 +126,13 @@ export const Container = styled.div`
     background: #FFFFFF;
     border:1px solid #9F9F9F;
     border-radius: 5px;
-    padding:.5rem;
+    padding:10px;
     font-weight: 500;
     font-style: normal;
     font-size: 21px;
     line-height: 25px;
     letter-spacing: 1.05px;
+    margin-right:27px;
 
   @media (max-width: 768px) {
     width:275px;

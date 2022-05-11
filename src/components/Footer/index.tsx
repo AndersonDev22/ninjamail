@@ -3,14 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NinjaMailLogo from '../../../public/images/NinjaMailLogo.png'
 
-import {
-  Container,
-  FooterLinks,
-  FooterList,
-  List,
-  Logo,
-  RightsReserved
-} from "./styles";
+import { Container, FooterLinks, FooterList, List, RightsReserved } from "./styles";
 
 export default function Footer() {
   return (
@@ -18,11 +11,11 @@ export default function Footer() {
 
       <FooterLinks>
 
-        <Logo>
+        <figure className="logo">
           <Link href="/">
             <Image src={NinjaMailLogo} alt="logomarca ninjamail" />
           </Link>
-        </Logo>
+        </figure>
 
         <FooterList>
           <div className="blockList">

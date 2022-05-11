@@ -16,9 +16,9 @@ export default function MainLayout() {
       <Video />
       <Sec3 />
       <Sec4 />
-      {/* <Sec5 /> */}
-      {/* <GetStarted /> */}
-      {/* <Footer /> */}
+      <Sec5 />
+      <GetStarted />
+      <Footer />
     </Container>
   )
 }

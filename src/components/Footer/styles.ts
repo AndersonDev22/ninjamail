@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width:1440px;
-  height:443px;
-  max-width:100%;
+  /* border:1px solid; */
+  width:100%;
+  height:433px;
+  max-width:1440px;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -22,17 +23,16 @@ export const Container = styled.div`
 `;
 
 export const FooterLinks = styled.div`
-border:1px solid blue;
+  /* border:1px solid blue; */
   display:flex;
   justify-content:space-between;
-  width:1440px;
-  height:0 auto;
+  width:100%;
+  height:335px;
   padding:79px 250px;
   display:flex;
   max-width:100%;
 
   @media (max-width: 768px) {
-    width:1040px;
     height: 230px;
     padding:35px 105px;
   }
@@ -47,19 +47,8 @@ border:1px solid blue;
  }
 `;
 
-export const Logo = styled.div`
-  border:1px solid green;
-  width:195px;
-  height:55px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    width:130px;
-  }
-`;
-
 export const FooterList = styled.div`
-  border:1px solid yellowgreen;
+  /* border:1px solid yellowgreen; */
   width:564px;
   height:200px;
   display:flex;
@@ -96,7 +85,7 @@ export const FooterList = styled.div`
 `;
 
 export const List = styled.ul`
-    border:1px solid red;
+    /* border:1px solid red; */
     width:141px;
 
     @media (max-width: 768px) {
@@ -143,15 +132,17 @@ export const List = styled.ul`
 `;
 
 export const RightsReserved = styled.div`
-  border:1px solid gray;
+  /* border:1px solid gray; */
   display:flex;
-  width:1088px;
-  height:98px;
+  width:100%;
+  height:96px;
+  max-width:1088px;
   justify-content: space-between;
   align-items:center;
   padding:39px 60px;
   border-top:2.4px solid #DBDBDB;
-  max-width:100%;
+  margin:0 250px;
+
 
   @media (max-width: 768px) {
     padding:1.9rem 5rem;
@@ -227,4 +218,15 @@ export const RightsReserved = styled.div`
       height:20px;
     }
   }
+
+  .logo{
+  border:1px solid green;
+  width:195px;
+  height:55px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width:130px;
+  }
+}
 `;
