@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* border:1px solid; */
   display:flex;
   width:100%;
   height:400px;
@@ -25,7 +24,6 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  /* border:1px solid; */
   width:30rem;
   text-align: center;
   font-size:44px;
@@ -48,7 +46,6 @@ export const Title = styled.h1`
 `;
 
 export const GroupLogos = styled.div`
-  /* border:1px solid; */
   display:flex;
   justify-content:space-between;
   width:944px;
@@ -72,7 +69,6 @@ export const GroupLogos = styled.div`
 `;
 
 export const ContainerImage = styled.figure`
-  /* border: 1px solid; */
   display:flex;
   justify-content:center;
   align-items:center;

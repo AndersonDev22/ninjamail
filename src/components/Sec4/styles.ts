@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* border:1px solid; */
   display:flex;
   width:100%;
   height:630px;
@@ -43,9 +42,12 @@ export const Container = styled.div`
     }
 
     @media (max-width: 320px) {
-      width:240px;
-      height:100px;
+      width:230px;
+      height:165px;
       font-size:22px;
+      line-height: 36px;
+      margin:0;
+      padding:20px;
     }
   }
 
@@ -111,7 +113,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 320px) {
-    width:280px;
+    width:300px;
     height:150px;
     flex-wrap:none;
     justify-content: center;
@@ -145,13 +147,14 @@ export const Container = styled.div`
   @media (max-width: 320px) {
     width:280px;
     height:42px;
+    margin-bottom:20px;
+    margin-right:0;
   }
 
     :focus{
       border:2px solid #4ba87d;
     }
-  }
-
+    }
   }
 `;
 
@@ -165,8 +168,9 @@ export const GroupText = styled.div`
   margin:16px;
 
   @media (max-width: 768px) {
-      margin:12px;
-    }
+    margin:10px;
+    height:45px;
+  }
 
   @media (max-width: 320px) {
     width:180px;
@@ -206,7 +210,6 @@ export const GroupText = styled.div`
       line-height: 14px;
     }
   }
-
 `;
 
 export const ContentImage = styled.div`

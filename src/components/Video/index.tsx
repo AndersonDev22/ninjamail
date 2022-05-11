@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ButtonWhite from "../ButtonWhite";
 import { Container } from "./styles";
 import ImageVideo from '../../../public/images/Video.svg'
 
@@ -16,7 +15,7 @@ export default function Video() {
 
       <div className="TitleAndButton">
         <h1>Reach More Customers</h1>
-        <ButtonWhite text="LEARN HOW" />
+        <button className="button">LEARN HOW</button>
       </div>
 
     </Container>

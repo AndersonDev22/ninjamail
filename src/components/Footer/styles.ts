@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* border:1px solid; */
   width:100%;
   height:433px;
   max-width:1440px;
@@ -23,7 +22,6 @@ export const Container = styled.div`
 `;
 
 export const FooterLinks = styled.div`
-  /* border:1px solid blue; */
   display:flex;
   justify-content:space-between;
   width:100%;
@@ -33,7 +31,6 @@ export const FooterLinks = styled.div`
   max-width:100%;
 
   @media (max-width: 768px) {
-    /* border:1px solid blue; */
     height:225px;
     padding:35px 105px;
   }
@@ -48,7 +45,6 @@ export const FooterLinks = styled.div`
  }
 
  .logo{
-  /* border:1px solid green; */
   width:195px;
   height:55px;
   cursor: pointer;
@@ -61,7 +57,6 @@ export const FooterLinks = styled.div`
 `;
 
 export const FooterList = styled.div`
-  /* border:1px solid yellowgreen; */
   width:564px;
   height:200px;
   display:flex;
@@ -74,7 +69,7 @@ export const FooterList = styled.div`
 
   @media (max-width: 320px) {
     width:280px;
-    height:250px;
+    height:300px;
     flex-direction:column;
     justify-content:center;
     flex-wrap:wrap;
@@ -98,7 +93,6 @@ export const FooterList = styled.div`
 `;
 
 export const List = styled.ul`
-    /* border:1px solid red; */
     width:141px;
 
     @media (max-width: 768px) {
@@ -145,7 +139,6 @@ export const List = styled.ul`
 `;
 
 export const RightsReserved = styled.div`
-  /* border:1px solid gray; */
   display:flex;
   width:100%;
   height:96px;

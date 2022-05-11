@@ -13,8 +13,8 @@ export const Container = styled.div`
   }
 
   @media (max-width: 320px) {
-    height:280px;
-    /* margin-bottom:0; */
+    flex-direction:column;
+    height:400px;
   }
 `;
 
@@ -33,6 +33,7 @@ export const Section = styled.section`
   }
 
   @media (max-width: 320px) {
+    justify-content:center;
     width:320px;
     height:290px;
   }
@@ -46,7 +47,6 @@ export const GroupText = styled.div`
   flex-direction:column;
 
   @media (max-width: 768px) {
-    /* border:1px solid; */
     width:330px;
     height:208px;
     padding:0;
@@ -54,9 +54,8 @@ export const GroupText = styled.div`
   }
 
   @media (max-width: 320px) {
-    border:1px solid;
     width:330px;
-    height:230px;
+    height:30px;
     padding:12px;
   }
 
@@ -73,6 +72,11 @@ export const GroupText = styled.div`
       margin-bottom:10px;
     }
 
+    @media (max-width: 320px) {
+      line-height:36px;
+      line-height: 46px;
+      margin-bottom:90px;
+    }
   }
 
   h4{
@@ -84,21 +88,18 @@ export const GroupText = styled.div`
 
   @media (max-width: 768px) {
     font-size:12px;
-    line-height: 16px;
+    line-height:16px;
   }
 
   @media (max-width: 320px) {
+    height:32px;
     font-size:12px;
-    line-height: 16px;
   }
-
-
   }
 `;
 
 export const GroupButton = styled.div`
   display:flex;
-  margin-top:0.2rem;
   display:flex;
   justify-content:center;
   flex-direction:column;
@@ -113,7 +114,9 @@ export const GroupButton = styled.div`
   }
 
   @media (max-width: 320px) {
-  margin-left:12px;
+    display:flex;
+    justify-content:space-between;
+    width:300px;
   }
 `;
 
@@ -143,7 +146,5 @@ export const BtnWhite = styled.button`
     font-size:13px;
     padding:0;
     border: 2px solid #4ba87d;
-    margin-left:20px;
-
   }
 `;

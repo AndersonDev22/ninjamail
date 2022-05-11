@@ -1,30 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* border:1px solid blue; */
   display:flex;
   width:100%;
   height:630px;
   max-width:1440px;
   padding:44px 165px;
   justify-content:space-between;
-  /* margin-bottom:110px; */
 
   @media (max-width: 768px) {
-    /* border:1px solid blue; */
     height:400px;
     padding:20px 30px;
-    /* margin-bottom:10px; */
   }
 
   @media (max-width: 320px) {
     width:320px;
-    height:820px;
+    height:825px;
     justify-content:center;
     flex-direction:column;
-    align-items:flex-start;
-    padding:10px;
-
+    padding:5px;
   }
 
   h1{
@@ -40,11 +34,15 @@ export const Container = styled.div`
         line-height: 31px;
         margin-bottom:18px;
       }
+
+      @media (max-width: 320px) {
+        font-size: 28px;
+        line-height: 31px;
+      }
   }
 
   h2{
-    /* border:1px solid; */
-    width:300px;
+     width:300px;
     text-align:left;
     padding:20px;
     font-family:'Raleway';
@@ -63,7 +61,6 @@ export const Container = styled.div`
   }
 
   h3{
-    /* border:1px solid; */
     width:319px;
     height:100%;
     display:flex;
@@ -91,7 +88,6 @@ export const Container = styled.div`
   }
 
   .container-thumb1{
-    /* border:1px solid; */
     width:320px;
     height:450px;
     display:flex;
@@ -99,14 +95,17 @@ export const Container = styled.div`
     flex-direction:column;
 
     @media (max-width: 768px) {
-      /* border:1px solid; */
       width:210px;
       height:295px;
+    }
+
+    @media (max-width: 320px) {
+      width:209px;
+      height:294px;
     }
   }
 
   .container-thumb2{
-    /* border:1px solid; */
     width:320px;
     height:450px;
     justify-content:center;
@@ -114,15 +113,19 @@ export const Container = styled.div`
     margin-top:80px;
 
     @media (max-width: 768px) {
-      :1px solid;
       width:210px;
       height:295px;
       margin-top:50px;
     }
+
+    @media (max-width: 320px) {
+      width:209px;
+      height:294px;
+      margin:12px 0px 0 95px;
+    }
   }
 
   .sec3-txt{
-    /* border:1px solid; */
     width:365px;
     height:324px;
     justify-content:center;
@@ -135,6 +138,11 @@ export const Container = styled.div`
       margin-top:90px;
     }
 
+    @media (max-width: 320px) {
+       width:232px;
+      height:206px;
+      margin:15px 10px 10px 35px;
+    }
 
     h2{
       padding:0;
@@ -145,41 +153,40 @@ export const Container = styled.div`
         font-size:12px;
         line-height:16px;
       }
-
     }
   }
 
   .figure{
-    /* border:1px solid red; */
     display:flex;
     justify-content:center;
     width:319px;
     height:253px;
 
     @media (max-width: 768px) {
-      /* border:1px solid red; */
       width:209px;
       height:167px;
+    }
+
+    @media (max-width: 320px) {
+      height:162px;
     }
   }
 
   .white-box{
-  /* border:1px solid blueviolet; */
-  width:319px;
-  height:195px;
-  display:flex;
-  justify-content:left;
-  flex-direction:column;
-  background:#fff;
+    width:319px;
+    height:195px;
+    display:flex;
+    justify-content:left;
+    flex-direction:column;
+    background:#fff;
 
   @media (max-width: 768px) {
-    /* border:1px solid blueviolet; */
     width:209px;
     height:128px;
   }
 
   @media (max-width: 320px) {
-    margin:30px 80px 0 0;
+    height:128px;
   }
   }
 `;

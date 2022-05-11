@@ -86,7 +86,6 @@ export const Nav = styled.div`
       margin-left: -40px;
       transition: transform 0.5s ease-in-out;
     }
-
   }
 
   .button{
@@ -119,13 +118,12 @@ export const Nav = styled.div`
 
     @media (max-width: 320px) {
       width:225px;
-      height:35px;
+      height:37px;
     }
-
   }
 
   .menu-items li {
-
+  /* border: 1px solid blue; */
     list-style: none;
     margin-bottom: 10px;
 
@@ -133,7 +131,7 @@ export const Nav = styled.div`
       width:320px;
       text-align: center;
       align-items: center;
-      margin-left:40px;
+      margin-left:45px;
     }
   }
 
