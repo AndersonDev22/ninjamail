@@ -9,19 +9,17 @@ export const Container = styled.div`
   align-items:center;
 
   @media (max-width: 768px) {
-    /* width:768px; */
     height:332px;
   }
 
   @media (max-width: 320px) {
-    /* width:320px; */
     height:280px;
     /* margin-bottom:0; */
   }
 `;
 
 export const Section = styled.section`
-  background:url("images/hero.svg") no-repeat right;
+  background:url("images/Hero.svg") no-repeat right;
   background-size:contain;
   display:flex;
   justify-content:space-between;
@@ -48,11 +46,15 @@ export const GroupText = styled.div`
   flex-direction:column;
 
   @media (max-width: 768px) {
+    /* border:1px solid; */
     width:330px;
-    height:432px;
+    height:208px;
+    padding:0;
+    margin-top:10px;
   }
 
   @media (max-width: 320px) {
+    border:1px solid;
     width:330px;
     height:230px;
     padding:12px;
@@ -68,6 +70,7 @@ export const GroupText = styled.div`
     @media (max-width: 768px) {
       font-size: 38px;
       line-height: 46px;
+      margin-bottom:10px;
     }
 
   }

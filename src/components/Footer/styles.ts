@@ -12,7 +12,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     width:768px;
-    height:257px;
+    height:286px;
   }
 
   @media (max-width: 320px) {
@@ -33,7 +33,8 @@ export const FooterLinks = styled.div`
   max-width:100%;
 
   @media (max-width: 768px) {
-    height: 230px;
+    /* border:1px solid blue; */
+    height:225px;
     padding:35px 105px;
   }
 
@@ -45,6 +46,18 @@ export const FooterLinks = styled.div`
     height:350px;
     padding:0;
  }
+
+ .logo{
+  /* border:1px solid green; */
+  width:195px;
+  height:55px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width:130px;
+    height:40px;
+  }
+}
 `;
 
 export const FooterList = styled.div`
@@ -218,15 +231,4 @@ export const RightsReserved = styled.div`
       height:20px;
     }
   }
-
-  .logo{
-  border:1px solid green;
-  width:195px;
-  height:55px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    width:130px;
-  }
-}
 `;

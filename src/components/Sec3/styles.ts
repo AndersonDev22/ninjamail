@@ -11,10 +11,10 @@ export const Container = styled.div`
   /* margin-bottom:110px; */
 
   @media (max-width: 768px) {
-    width:768px;
-    height:370px;
-    padding:20px 40px;
-    margin-bottom:10px;
+    /* border:1px solid blue; */
+    height:400px;
+    padding:20px 30px;
+    /* margin-bottom:10px; */
   }
 
   @media (max-width: 320px) {
@@ -29,11 +29,11 @@ export const Container = styled.div`
 
   h1{
     font-size:44px;
-     font-weight:900;
-     font-style:normal;
-     line-height: 48px;
-     font-family: 'Playfair Display';
-     margin-bottom:20px;
+    font-weight:900;
+    font-style:normal;
+    line-height: 48px;
+    font-family: 'Playfair Display';
+    margin-bottom:20px;
 
      @media (max-width: 768px) {
         font-size:28px;
@@ -58,6 +58,7 @@ export const Container = styled.div`
       height:79px;
       font-size:12px;
       line-height:16px;
+      padding:10px;
     }
   }
 
@@ -79,6 +80,7 @@ export const Container = styled.div`
     @media (max-width: 768px) {
       font-size: 12px;
       line-height: 14px;
+      padding:10px;
     }
 
     @media (max-width: 320px) {
@@ -95,6 +97,12 @@ export const Container = styled.div`
     display:flex;
     justify-content:center;
     flex-direction:column;
+
+    @media (max-width: 768px) {
+      /* border:1px solid; */
+      width:210px;
+      height:295px;
+    }
   }
 
   .container-thumb2{
@@ -104,6 +112,13 @@ export const Container = styled.div`
     justify-content:center;
     flex-direction:column;
     margin-top:80px;
+
+    @media (max-width: 768px) {
+      :1px solid;
+      width:210px;
+      height:295px;
+      margin-top:50px;
+    }
   }
 
   .sec3-txt{
@@ -114,10 +129,23 @@ export const Container = styled.div`
     flex-direction:column;
     margin-top:130px;
 
+    @media (max-width: 768px) {
+      width:232px;
+      height:205px;
+      margin-top:90px;
+    }
+
+
     h2{
       padding:0;
       font-size:19px;
       line-height: 26px;
+
+      @media (max-width: 768px) {
+        font-size:12px;
+        line-height:16px;
+      }
+
     }
   }
 
@@ -127,6 +155,12 @@ export const Container = styled.div`
     justify-content:center;
     width:319px;
     height:253px;
+
+    @media (max-width: 768px) {
+      /* border:1px solid red; */
+      width:209px;
+      height:167px;
+    }
   }
 
   .white-box{
@@ -139,19 +173,13 @@ export const Container = styled.div`
   background:#fff;
 
   @media (max-width: 768px) {
+    /* border:1px solid blueviolet; */
     width:209px;
-    height:206px;
-    margin-top:40px;
+    height:128px;
   }
 
   @media (max-width: 320px) {
     margin:30px 80px 0 0;
-  }
-
-  h2{
-    @media (max-width: 768px) {
-    padding:0;
-    }
   }
   }
 `;

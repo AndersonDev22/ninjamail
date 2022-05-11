@@ -13,13 +13,14 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width:768px;
-    height: 17.6rem;
+    height:240px;
+    margin-top:30px;
   }
 
   @media (max-width: 320px) {
     width:320px;
     height:500px;
-    margin-bottom:20px;
+    margin-bottom:30px;
   }
 `;
 
@@ -56,7 +57,7 @@ export const GroupLogos = styled.div`
 
   @media (max-width: 768px) {
     padding:0 20px;
-    width:768px;
+    width:700px;
     height:257px;
   }
 
