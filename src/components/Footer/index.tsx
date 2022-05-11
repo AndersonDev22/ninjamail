@@ -66,7 +66,7 @@ export default function Footer() {
 
               <li>
                 <Link href="https://www.linkedin.com/">
-                  <a>LinkedIn</a>
+                  <a target="_blank">LinkedIn</a>
                 </Link>
               </li>
 

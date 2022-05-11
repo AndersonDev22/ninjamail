@@ -84,7 +84,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerGroupImgText = styled.div`
-/* border: 2px solid magenta; */
+  border: 2px solid magenta;
   display:flex;
   justify-content:space-between;
   width:46rem;

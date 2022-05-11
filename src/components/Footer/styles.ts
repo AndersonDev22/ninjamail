@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+border:1px solid;
   width:1440px;
   height:443px;
   max-width:100%;
@@ -22,6 +23,7 @@ export const Container = styled.div`
 `;
 
 export const FooterLinks = styled.div`
+border:1px solid blue;
   display:flex;
   justify-content:space-between;
   width:1440px;
@@ -47,6 +49,7 @@ export const FooterLinks = styled.div`
 `;
 
 export const Logo = styled.div`
+  border:1px solid green;
   width:195px;
   height:55px;
   cursor: pointer;
@@ -57,6 +60,7 @@ export const Logo = styled.div`
 `;
 
 export const FooterList = styled.div`
+  border:1px solid yellowgreen;
   width:564px;
   height:200px;
   display:flex;
@@ -93,6 +97,7 @@ export const FooterList = styled.div`
 `;
 
 export const List = styled.ul`
+    border:1px solid red;
     width:141px;
 
     @media (max-width: 768px) {
@@ -116,6 +121,7 @@ export const List = styled.ul`
     }
 
     a{
+      color:#000;
       text-decoration:none;
       font-family: 'Raleway';
       font-style: normal;
@@ -138,6 +144,7 @@ export const List = styled.ul`
 `;
 
 export const RightsReserved = styled.div`
+  border:1px solid gray;
   display:flex;
   width:1088px;
   height:98px;

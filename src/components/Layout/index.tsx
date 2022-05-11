@@ -6,18 +6,16 @@ import Hero from "../Hero/Hero";
 import Video from "../Video";
 import Navbar from "../Navbar";
 import Sec5 from "../Sec5";
-import { Container, MainContainer } from "./styles";
+import { Container } from "./styles";
 
 export default function MainLayout() {
   return (
     <Container>
       <Navbar />
-      <MainContainer>
-        <Hero />
-        <Video />
-        <Sec3 />
-        <Sec4 />
-      </MainContainer>
+      <Hero />
+      <Video />
+      <Sec3 />
+      <Sec4 />
       <Sec5 />
       <GetStarted />
       <Footer />
